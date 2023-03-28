@@ -10,6 +10,8 @@ import ParallaxExample from './Components/Horizontal';
 import ComputersCanvas from './Components/canvas/Computers';
 import { Canvas, useFrame, useThree } from '@react-three/fiber';
 import { useIntersect, Image, ScrollControls, Scroll } from '@react-three/drei';
+import EarthCanvas from './Components/canvas/Earth';
+import StarsCanvas from './Components/canvas/Stars';
 
 function Item({ url, scale, ...props }) {
   const visible = useRef(false);
@@ -53,7 +55,7 @@ function App() {
   return (
     <div>
       <ParallaxProvider>
-        <Parallax speed={0}>
+        <Parallax speed={-10}>
           <div className=" h-[100vh] flex flex-col p-10 justify-center items-center">
             <h1 className="text-center text-[7em] uppercase items-center  weight-1000   ">
               Some Really Catchy Text That Gains Attention
@@ -62,23 +64,26 @@ function App() {
             <h2>Developer.Designer.Creator</h2>
           </div>
         </Parallax>
-        <Parallax speed={100}>
+        <Parallax speed={10}>
+          {' '}
+          <StarsCanvas />
           <div className="grid grid-cols-2 ">
-            <Parallax speed={-30}>
-              <div>
-                <ComputersCanvas />
+            <Parallax speed={40}>
+              <ComputersCanvas />
+            </Parallax>
+            <Parallax speed={-10}>
+              <div className="px-5 text-3xl selection:text-[#0e0d0d] selection:bg-[#ead2ab]">
+                <p className="text-[2em] ">
+                  Hi, I'm <span className="underline underline-offset-4">Jozef Antony</span>
+                </p>
+                <p>
+                  <br />
+                  I'm a dedicated and skilled Full Stack Developer, I specialize in developing cutting-edge applications
+                  and websites that are both efficient and visually stunning. With a passion for programming and a year
+                  of experience under my belt, I'm eager to collaborate and innovate on new projects
+                </p>
               </div>
             </Parallax>
-            <div className='px-5 text-3xl'>
-              <p>
-                Hi, I'm Jozef
-                <br />
-                I'm a designer & developer with a passion for web design. I enjoy developing simple, clean and slick
-                websites that provide real value to the end user. Thousands of clients have procured exceptional results
-                while working with me. Delivering work within time and budget which meets client’s requirements is our
-                moto.
-              </p>
-            </div>
           </div>
         </Parallax>
 
