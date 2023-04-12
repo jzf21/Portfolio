@@ -1,22 +1,54 @@
-import React, { Suspense, useEffect, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
+import React, { Suspense, useEffect, useState,useRef } from 'react';
+import { Canvas,useFrame } from '@react-three/fiber';
 import { OrbitControls, useGLTF, useProgress } from '@react-three/drei';
+
 
 import CanvasLoader from '../loader';
 
 const Computers = ({ isMobile }) => {
-  const { scene } = useGLTF('./room/scene.gltf');
+  const [mousePos, setMousePos] = useState([0, 0]);
+
+  const { scene } = useGLTF('./eyebot/eyebot.gltf');
+  const meshRef = useRef();
+    useEffect(() => {
+      const handleMouseMove = (e) => {
+        setMousePos([e.clientX, e.clientY]);
+      };
+      window.addEventListener("mousemove", handleMouseMove);
+      return () => {
+        window.removeEventListener("mousemove", handleMouseMove);
+      };
+    }, []);
+
+    // useFrame(() => {
+    //   if (meshRef.current) {
+    //     const mouseX = mousePos[0] / window.innerWidth;
+    //     const mouseY = mousePos[1] / window.innerHeight;
+    //     meshRef.current.position.x = mouseX * 8 - 4;
+    //     meshRef.current.position.y = -mouseY * 6 + 3;
+    //   }
+    // });
+    // useFrame(({ mouse }) => {
+    //   if (meshRef.current) {
+    //     meshRef.current.lookAt(
+    //       mouse.x * 20,
+    //       mouse.y * 10,
+    //       meshRef.current.position.z
+    //     );
+    //   }
+    // });
+
 
   return (
-    <mesh>
-      <hemisphereLight intensity={0.5} groundColor="black" />
-      <spotLight position={[-20, 50, 10]} angle={0} penumbra={1} intensity={1} castShadow shadow-mapSize={1024} />
+    <mesh ref={meshRef}>
+      <hemisphereLight intensity={5} groundColor="black" />
+      <spotLight position={[0, 0, 10]} angle={10} penumbra={1} intensity={1} castShadow shadow-mapSize={1024} />
       <pointLight intensity={1} />
       <primitive
         object={scene}
-        scale={isMobile ? 0.7 : 0.75}
+        scale={isMobile ? 0.7 : 1.5}
         position={isMobile ? [0, -3, -2.2] : [0, -3.25, -1.5]}
-        rotation={[-0.01, -0.2, -0.1]}
+        rotation={[0.0, -0.0, -0.0]}
       />
     </mesh>
   );
