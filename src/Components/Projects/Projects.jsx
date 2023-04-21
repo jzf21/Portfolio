@@ -62,7 +62,10 @@ const Projects = () => {
   ];
 
   return (
-    <div className="grid grid-cols-1 md:grid-cols-3  gap-8 md:gap-0 mx-auto tracking-wide">
+    <div
+      id="projects"
+      className="grid grid-cols-1 md:grid-cols-3  gap-8 md:gap-0 mx-auto tracking-wide"
+    >
       {projects.map((project, index) => (
         <Project
           key={index}

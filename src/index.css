@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 :root {
-font-family: 'Bebas Neue', cursive;
+  font-family: "Bebas Neue", cursive;
 
   line-height: 1.5;
   font-weight: 400;
@@ -20,15 +20,15 @@ font-family: 'Bebas Neue', cursive;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
 }
-.weight-1000{
+.weight-1000 {
   font-weight: 700;
   letter-spacing: 2px;
 }
-.bg-peach{
+.bg-peach {
   background-color: #ead2ab;
   color: #0e0d0d;
 }
-.bgblack{
+.bgblack {
   background-color: #0e0d0d;
   color: #ead2ab;
 }
@@ -40,8 +40,6 @@ a {
 a:hover {
   color: #535bf2;
 }
-
-
 
 h1 {
   font-size: 3.2em;
@@ -102,4 +100,10 @@ button:focus-visible {
   background-size: auto 100%;
   background-repeat: repeat-x;
   height: 100vh;
+}
+.resume {
+  font-family: Arial, Helvetica, sans-serif;
+}
+a:hover {
+  color: inherit;
 }
