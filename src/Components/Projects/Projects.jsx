@@ -3,14 +3,14 @@ import "./Projects.css";
 
 export const Project = ({ title, description, link, img }) => {
   return (
-    <div className="flex flex-col w-80 md:w-full card outline outline-1 gap-8 md:gap-16  md:min-h[300px] py-5 mx-auto ">
+    <div className="flex flex-col w-80 md:w-full card border-t-[2.5px] gap-8 md:gap-16  md:min-h[300px] py-5 mx-auto border-[#2c363f] border-[2px]">
       <a href={link} target="_blank">
-        <h2 className="hover:underline text-center justify-center items-center title-text uppercase ">
+        <h2 className="hover:underline text-center justify-center items-center title-text uppercase p-black font-semibold ">
           {title}
         </h2>
       </a>
-      <img src={img} alt="" className="w-80 mx-auto" />
-      <p className="text-center px-5 text-2xl">{description}</p>
+      {/* <img src={img} alt="" className="w-80 mx-auto" /> */}
+      <p className="text-center px-5 text-2xl p-black">{description}</p>
     </div>
   );
 };

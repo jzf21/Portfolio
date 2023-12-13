@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 
 const AccordionItem = ({ title, content, index }) => {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(index===1?true:false);
 
   return (
-    <div className="flex flex-col border-b border-gray-200 dark:border-gray-700">
-      <button
+    <div className="flex flex-col border-b-[3px] border-[#f6f3cf] ">
+      <div
         type="button"
-        className="flex items-center justify-between px-4 py-2 text-left font-medium rounded-t-lg focus:outline-none hover:bg-gray-100 dark:hover:bg-gray-800"
+        className="flex items-center justify-between px-4 py-2 text-left font-medium rounded-t-lg outline-none focus:outline-none  "
         onClick={() => setIsOpen(!isOpen)}
       >
-        <span className="text-xl font-bold">{`${index}. ${title}`}</span>
+        <p className="text-6xl font-bold align-middle my-5">
+          {` 0${index}`}
+          <span className="text-3xl font-normal align-middle ">{` ${title}`}</span>
+        </p>
+
         <span className="transition-transform duration-150 ease-in-out">
           {isOpen ? (
             <svg
@@ -44,9 +48,9 @@ const AccordionItem = ({ title, content, index }) => {
             </svg>
           )}
         </span>
-      </button>
+      </div>
       {isOpen && (
-        <div className="px-4 py-2 prose text-sm dark:text-gray-300">
+        <div className="px-4 py-4 prose text-xl dark:text-gray-300 w-full">
           {content}
         </div>
       )}

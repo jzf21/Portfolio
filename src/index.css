@@ -35,22 +35,18 @@
   color: #f4f7ec;
 }
 .bgblack {
-  background-color: #0e0d0d;
+  background-color: #2c363f;
   color: f4f5de;
 }
 .p-black {
   color: #2c363f;
 }
 .p-peach {
-  color: #f4f5de;
+  color: #f4f7ec;
 }
-a {
-  font-weight: 500;
-  color: #ead2ab;
-  text-decoration: inherit;
-}
-a:hover {
-  color: #535bf2;
+.bg-yellow{
+  background-color: #f4f5de;
+  color: #2c363f;
 }
 
 h1 {

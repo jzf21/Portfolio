@@ -17,6 +17,7 @@ import Navbar from "./Components/Navbar/Navbar";
 import ProjectsPage from "./Components/ProjectsPage/ProjectsPage";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
+import SelectedWorks from "./Components/SelectedWorks/SelectedWorks";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -39,6 +40,7 @@ function App() {
                   <About/>
               
                 </Parallax>
+                <SelectedWorks/>
 
                 <Parallax speed={30}>
                   <div>
