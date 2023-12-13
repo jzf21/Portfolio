@@ -1,8 +1,8 @@
 .title-text {
   
   letter-spacing: 1px;
-  color: #ead2ab;
-  background-color: #0e0d0d;
+  color: #fbe7c6;
+
   height: 13rem;
   line-height: 0.9;
   text-align: center;
@@ -18,4 +18,13 @@
     
     border-right: 1px solid #ead2ab;
     border-left: 1px solid #ead2ab;
+    
+
+
+background: rgba( 255, 255, 255, 0.25 );
+box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+backdrop-filter: blur( 4px );
+-webkit-backdrop-filter: blur( 4px );
+
+border: 1px solid rgba( 255, 255, 255, 0.18 );
 }

@@ -1,27 +1,20 @@
 import React from "react";
-import "./Projects.css";
+import { Project } from "../Projects/Projects";
 
-export const Project = ({ title, description, link, img }) => {
-  return (
-    <div className="flex flex-col w-80 md:w-full card outline outline-1 gap-8 md:gap-16  md:min-h[300px] py-5 mx-auto ">
-      <a href={link} target="_blank">
-        <h2 className="hover:underline text-center justify-center items-center title-text uppercase ">
-          {title}
-        </h2>
-      </a>
-      <img src={img} alt="" className="w-80 mx-auto" />
-      <p className="text-center px-5 text-2xl">{description}</p>
-    </div>
-  );
-};
-
-const Projects = () => {
+const ProjectsPage = () => {
   const projects = [
     {
       title: "Bon Appetit",
       description:
         "Bon Appetit is a small intiative trying to solve the problems of food wastage and hunger by providing a platform which connects people with excess food or people who are willing to contribute food to Non-Profit-Organizations.",
       link: "https://github.com/jzf21/BonAppetit",
+      img: "https://assets.devfolio.co/hackathons/ee2081145b544ce4a872fa511c467296/projects/2f233dcdd95f4a06ab481ba3ed523ce8/f0d1790f-b290-4971-847b-a040c5dbd3f9.jpeg",
+    },
+    {
+      title: "EasyCare",
+      description:
+        "A medical Consultancy system that speeds up the process of getting a medical consultation by providing a platform for doctors to provide their services online using Text-to-Speech and AI Diagnosis.Patient Data is also stored in a secure decentralised database.",
+      link: "",
       img: "https://assets.devfolio.co/hackathons/ee2081145b544ce4a872fa511c467296/projects/2f233dcdd95f4a06ab481ba3ed523ce8/f0d1790f-b290-4971-847b-a040c5dbd3f9.jpeg",
     },
     {
@@ -59,24 +52,33 @@ const Projects = () => {
       link: "",
       img: "https://assets.devfolio.co/hackathons/ee2081145b544ce4a872fa511c467296/projects/2f233dcdd95f4a06ab481ba3ed523ce8/f0d1790f-b290-4971-847b-a040c5dbd3f9.jpeg",
     },
+    {
+      title: "PDF-TO-TEXT USING OCR",
+      description:
+        "A python project that takes MCQs from pdf and store it in a database to simplify the data entry process. Acts as a service for edTech companies",
+      link: "",
+      img: "https://assets.devfolio.co/hackathons/ee2081145b544ce4a872fa511c467296/projects/2f233dcdd95f4a06ab481ba3ed523ce8/f0d1790f-b290-4971-847b-a040c5dbd3f9.jpeg",
+    },
   ];
-
   return (
-    <div
-      id="projects"
-      className="grid grid-cols-1 md:grid-cols-3  gap-8 md:gap-0 mx-auto tracking-wide"
-    >
-      {projects.map((project, index) => (
-        <Project
-          key={index}
-          title={project.title}
-          description={project.description}
-          link={project.link}
-          img={project.img}
-        />
-      ))}
+    <div className="py-20">
+        <h1>Projects</h1>
+      <div
+        id="projects"
+        className="grid grid-cols-1 md:grid-cols-3  gap-8 md:gap-0 mx-auto tracking-wide"
+      >
+        {projects.map((project, index) => (
+          <Project
+            key={index}
+            title={project.title}
+            description={project.description}
+            link={project.link}
+            img={project.img}
+          />
+        ))}
+      </div>
     </div>
   );
 };
 
-export default Projects;
+export default ProjectsPage;
