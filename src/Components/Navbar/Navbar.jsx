@@ -23,7 +23,7 @@ const Navbar = () => {
 
   return (
     <>
-      <nav className="block !text-black">
+      <nav className="block !text-[#f4f5de] hover:underline">
         <div className="sticky z-40 navbar">
           <div className="container nav-container fixed">
             <input
@@ -39,37 +39,37 @@ const Navbar = () => {
               <span className="line line3"></span>
             </label>
             <div className="logo"></div>
-            <div className="menu-items text-black">
-              <li>
+            <div className="menu-items text-[#f4f5de] ">
+              <li className="hover:underline" >
                 <a
-                  className="text-black tracking-wide"
+                  className="text-[#f4f5de] hover:underline tracking-wide"
                   href="#"
                   onClick={handleLinkClick}
                 >
                   Home
                 </a>
               </li>
-              <li>
+              <li className="hover:underline">
                 <a
-                  className="text-black tracking-wide"
+                  className="text-[#f4f5de] hover:underline tracking-wide"
                   href="#projects"
                   onClick={handleLinkClick}
                 >
                   Projects
                 </a>
               </li>
-              <li>
+              <li className="hover:underline">
                 <a
-                  className="text-black tracking-wide"
+                  className="text-[#f4f5de] hover:underline tracking-wide"
                   href="#"
                   onClick={handleLinkClick}
                 >
                   Contacts
                 </a>
               </li>
-              <li>
+              <li className="hover:underline">
                 <a
-                  className="text-black tracking-wide"
+                  className="text-[#f4f5de] hover:underline tracking-wide"
                   href="/resume"
                   onClick={handleLinkClick}
                 >
