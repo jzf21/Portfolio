@@ -1,54 +1,35 @@
-import React from 'react'
+import React from "react";
+import twitter from "../../assets/twitter-154-svgrepo-com.svg";
+import github from "../../assets/github-142-svgrepo-com.svg";
+import linkedin from "../../assets/linkedin-161-svgrepo-com.svg";
+import mail from "../../assets/mail-svgrepo-com.svg";
 
 const Footer = () => {
   return (
-    <div>
-      <footer className=" shadow  m-4">
-        <div className="w-full container mx-auto p-4 md:px-6 md:py-8">
-          <div className="sm:flex sm:items-center sm:justify-between">
-            <a
-              href="https://flowbite.com/"
-              className="flex items-center mb-4 sm:mb-0"
-            >
-              <span className="self-center text-2xl font-semibold whitespace-nowrap ">
-                Jozef
-              </span>
-            </a>
-            <ul className="flex flex-wrap items-center mb-6 text-sm font-medium sm:mb-0 ">
-              <li>
-                <a href="#" className="mr-4 hover:underline md:mr-6 ">
-                  About
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://github.com/jzf21"
-                  className="mr-4 hover:underline md:mr-6"
-                >
-                  Github
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://www.linkedin.com/in/jzf21/"
-                  className="mr-4 hover:underline md:mr-6 "
-                >
-                  Linkedin
-                </a>
-              </li>
-              <li>
-                <a href="#" className="hover:underline">
-                  Contact
-                </a>
-              </li>
-            </ul>
-          </div>
-          <hr className="my-6 border-gray-200 sm:mx-auto dark:border-gray-700 lg:my-8" />
-          <span className="block text-sm sm:text-center ">© 2023 </span>
-        </div>
-      </footer>
+    <div className="flex flex-row justify-between  border-t border-gray-800 w-full px-10 md:px-40 py-10">
+      <div className="flex flex-row gap-8 bg-yellow self-start">
+        <a href="home">Home</a>
+        <a href="#home">About</a>
+        <a href="#home">Projects</a>
+        <a href="#home">Contact</a>
+      </div>
+
+      <div className="flex flex-row gap-8  bg-yellow ">
+        <a href="https://twitter.com/jozefantony7" target="_blank">
+          <img src={twitter} alt="" className="w-[24px] h-[24px]" />
+        </a>
+        <a href="https://linkedin.com/in/jozefantony" target="_blank">
+          <img src={linkedin} alt="" className="w-[24px] h-[24px]" />
+        </a>
+        <a href="https://github.com/jzf21" target="_blank">
+          <img src={github} alt="" className="w-[24px] h-[24px]" />
+        </a>
+        <a href="mailto:jozefneelamkavil2003@gmail.com">
+          <img src={mail} alt="" className="w-[24px] h-[24px]" />
+        </a>
+      </div>
     </div>
   );
-}
+};
 
-export default Footer
+export default Footer;

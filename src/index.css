@@ -6,7 +6,7 @@
 
 :root {
   font-family: "Poppins", sans-serif;
-
+  min-width: 0;
   line-height: 1.5;
   font-weight: 400;
 
@@ -24,6 +24,7 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   -webkit-text-size-adjust: 100%;
+  scroll-behavior: smooth;
 }
 
 .weight-1000 {
@@ -54,7 +55,11 @@ h1 {
   line-height: 1.1;
   font-family: "Reenie Beanie", cursive;
 }
+h2{
 
+  line-height: 1.5;
+
+}
 button {
   border-radius: 8px;
   border: 1px solid transparent;

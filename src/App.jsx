@@ -18,6 +18,7 @@ import ProjectsPage from "./Components/ProjectsPage/ProjectsPage";
 import Home from "./Components/Home/Home";
 import About from "./Components/About/About";
 import SelectedWorks from "./Components/SelectedWorks/SelectedWorks";
+import Contact from "./Components/Contact.jsx/Contact";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -33,14 +34,13 @@ function App() {
             element={
               <ParallaxProvider>
                 <Parallax speed={-20}>
-                <Home/>
+                  <Home />
                 </Parallax>
                 <Parallax speed={20}>
                   {" "}
-                  <About/>
-              
+                  <About />
                 </Parallax>
-                <SelectedWorks/>
+                <SelectedWorks />
 
                 <Parallax speed={30}>
                   <div>
@@ -49,6 +49,12 @@ function App() {
                 </Parallax>
 
                 <Projects />
+                <Parallax speed={30}>
+                  <div>
+                   <Contact/>
+                  </div>
+                </Parallax>
+
                 <Footer />
               </ParallaxProvider>
             }

@@ -78,7 +78,7 @@
   height: 4px;
   width: 100%;
   border-radius: 10px;
-  background: #ead2ab;
+  background: #19171c;
 }
 
 .nav-container .hamburger-lines .line1 {
@@ -132,7 +132,7 @@
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line1 {
   transform: rotate(45deg);
-  background-color: black;
+  background-color: rgb(236, 237, 174);
 }
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line2 {
@@ -141,7 +141,7 @@
 
 .nav-container input[type="checkbox"]:checked ~ .hamburger-lines .line3 {
   transform: rotate(-45deg);
-  background-color: black;
+  background-color: rgb(253, 248, 184);
 }
 
 .nav-container input[type="checkbox"]:checked ~ .logo {
