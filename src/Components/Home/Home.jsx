@@ -16,7 +16,7 @@ const Home = () => {
       <img
         src={image}
         alt=""
-        className="w-[40%] h-[70%] hidden md:block  absolute right-10 -z-50"
+        className="w-[40%] h-[70%] hidden md:block  md:absolute right-10 -z-50"
       />
     </div>
   );
