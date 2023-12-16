@@ -6,12 +6,12 @@ import mail from "../../assets/mail-svgrepo-com.svg";
 
 const Footer = () => {
   return (
-    <div className="flex flex-row justify-between  border-t border-gray-800 w-full px-10 md:px-40 py-10">
-      <div className="flex flex-row gap-8 bg-yellow self-start">
-        <a href="home">Home</a>
-        <a href="#home">About</a>
-        <a href="#home">Projects</a>
-        <a href="#home">Contact</a>
+    <div className="flex flex-row justify-center md:justify-between border-t border-gray-800 w-full px-10 md:px-40 py-10">
+      <div className=" hidden md:flex flex-row gap-8 bg-yellow self-start ">
+        <a className="hover:underline" href="home">Home</a>
+        <a className="hover:underline" href="#home">About</a>
+        <a className="hover:underline" href="#home">Projects</a>
+        <a className="hover:underline" href="#home">Contact</a>
       </div>
 
       <div className="flex flex-row gap-8  bg-yellow ">

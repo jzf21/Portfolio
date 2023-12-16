@@ -5,7 +5,7 @@ export const Project = ({ title, description, link, img }) => {
   return (
     <div className="flex flex-col w-80 md:w-full card border-t-[2.5px] gap-8 md:gap-16  md:min-h[300px] py-5 mx-auto border-[#2c363f] border-[2px]">
       <a href={link} target="_blank">
-        <h2 className="hover:underline text-center justify-center items-center title-text uppercase p-black font-semibold ">
+        <h2 className="hover:underline text-center justify-center items-center title-text md:text-[4.5rem] text-[3.5rem] uppercase p-black font-semibold ">
           {title}
         </h2>
       </a>

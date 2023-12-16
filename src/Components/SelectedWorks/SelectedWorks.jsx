@@ -60,10 +60,10 @@ const SelectedWorks = () => {
     {
       index: 3,
       title: "Full Stack Application",
-      name: "The Library",
+      name: "Xpense",
       description:
-        "An Online Library created using React.Js and Supabase. To promote reading habits by providing credits to people who frequently rent books.",
-      link: "",
+        "A web application that helps you keep track of your expenses and income. It also provides you with a graphical representation of your expenses and income.",
+      link: "https://xpense-client.vercel.app/",
       img: "https://assets.devfolio.co/hackathons/ee2081145b544ce4a872fa511c467296/projects/2f233dcdd95f4a06ab481ba3ed523ce8/f0d1790f-b290-4971-847b-a040c5dbd3f9.jpeg",
     },
   ];
