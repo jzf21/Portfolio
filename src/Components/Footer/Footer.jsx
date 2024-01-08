@@ -8,17 +8,25 @@ const Footer = () => {
   return (
     <div className="flex flex-row justify-center md:justify-between border-t border-gray-800 w-full px-10 md:px-40 py-10">
       <div className=" hidden md:flex flex-row gap-8 bg-yellow self-start ">
-        <a className="hover:underline" href="home">Home</a>
-        <a className="hover:underline" href="#home">About</a>
-        <a className="hover:underline" href="#home">Projects</a>
-        <a className="hover:underline" href="#home">Contact</a>
+        <a className="hover:underline" href="home">
+          Home
+        </a>
+        <a className="hover:underline" href="#home">
+          About
+        </a>
+        <a className="hover:underline" href="#home">
+          Projects
+        </a>
+        <a className="hover:underline" href="#home">
+          Contact
+        </a>
       </div>
 
       <div className="flex flex-row gap-8  bg-yellow ">
-        <a href="https://twitter.com/jozefantony7" target="_blank">
+        <a href="https://twitter.com/jzf21" target="_blank">
           <img src={twitter} alt="" className="w-[24px] h-[24px]" />
         </a>
-        <a href="https://linkedin.com/in/jozefantony" target="_blank">
+        <a href="https://linkedin.com/in/jzf21" target="_blank">
           <img src={linkedin} alt="" className="w-[24px] h-[24px]" />
         </a>
         <a href="https://github.com/jzf21" target="_blank">
