@@ -4,6 +4,20 @@ import { Project } from "../Projects/Projects";
 const ProjectsPage = () => {
   const projects = [
     {
+      title: "Voya",
+      description:
+        "An AI powered travel assistant. Simplifies the travel planning process by providing personalized recommendations and itineraries.",
+      link: "https://github.com/jzf21/madeitoutofthegc",
+      img: "https://assets.devfolio.co/hackathons/ee2081145b544ce4a872fa511c467296/projects/2f233dcdd95f4a06ab481ba3ed523ce8/f0d1790f-b290-4971-847b-a040c5dbd3f9.jpeg",
+    },
+    {
+      title: "WayFinder",
+      description:
+        "An AI powered Web Navigation assistant. Simplifies the web navigation process by helping you navigate complicated web tasks.",
+      link: "https://github.com/jzf21/wayfinder-landing",
+      img: "https://assets.devfolio.co/hackathons/ee2081145b544ce4a872fa511c467296/projects/2f233dcdd95f4a06ab481ba3ed523ce8/f0d1790f-b290-4971-847b-a040c5dbd3f9.jpeg",
+    },
+    {
       title: "Bon Appetit",
       description:
         "Bon Appetit is a small intiative trying to solve the problems of food wastage and hunger by providing a platform which connects people with excess food or people who are willing to contribute food to Non-Profit-Organizations.",
@@ -17,13 +31,7 @@ const ProjectsPage = () => {
       link: "",
       img: "https://assets.devfolio.co/hackathons/ee2081145b544ce4a872fa511c467296/projects/2f233dcdd95f4a06ab481ba3ed523ce8/f0d1790f-b290-4971-847b-a040c5dbd3f9.jpeg",
     },
-    {
-      title: "The Library",
-      description:
-        "An Online Library created using React.Js and Supabase. To promote reading habits by providing credits to people who frequently rent books.",
-      link: "",
-      img: "https://assets.devfolio.co/hackathons/ee2081145b544ce4a872fa511c467296/projects/2f233dcdd95f4a06ab481ba3ed523ce8/f0d1790f-b290-4971-847b-a040c5dbd3f9.jpeg",
-    },
+
     {
       title: "The Solar System",
       description:

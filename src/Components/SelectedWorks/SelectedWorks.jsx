@@ -42,10 +42,10 @@ const SelectedWorks = () => {
     {
       index: 1,
       title: "Full Stack Application",
-      name: "Bon Appetit",
+      name: "Voya",
       description:
-        "Bon Appetit is a small intiative trying to solve the problems of food wastage and hunger by providing a platform which connects people with excess food or people who are willing to contribute food to Non-Profit-Organizations.",
-      link: "https://github.com/jzf21/BonAppetit",
+        "An AI powered travel assistant. Simplifies the travel planning process by providing personalized recommendations and itineraries.",
+      link: "https://github.com/jzf21/madeitoutofthegc",
       img: "https://assets.devfolio.co/hackathons/ee2081145b544ce4a872fa511c467296/projects/2f233dcdd95f4a06ab481ba3ed523ce8/f0d1790f-b290-4971-847b-a040c5dbd3f9.jpeg",
     },
     {
